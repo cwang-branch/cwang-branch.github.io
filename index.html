@@ -87,18 +87,18 @@
         }
     });
   };
-  function showJourney () {
-    console.log("showing");
-    branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM', function(err, data) {
-      branch.closeJourney(
-        function(err) { 
-          branch.track('pageview', null, {'branch_view_id': '411594526336324610'});
-          console.log(err); 
-        }
-      );
+  // function showJourney () {
+  //   console.log("showing");
+  //   branch.init('key_live_gchnKkd3l3m9YBPP2d73jmfejkcgVjgM', function(err, data) {
+  //     branch.closeJourney(
+  //       function(err) { 
+  //         branch.track('pageview', null, {'branch_view_id': '411594526336324610'});
+  //         console.log(err); 
+  //       }
+  //     );
       
-    });
-  };
+  //   });
+  // };
   function setTheIdentity () {
     console.log("setting the identity");
     // var timestamp = Math.round(+new Date()/1000);
